@@ -1,51 +1,140 @@
-body {
-    font-family: Arial, sans-serif;
+/* ===== Reset ===== */
+* {
     margin: 0;
-    background: #f4f6f8;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* ===== Body ===== */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f8fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== Header ===== */
 header {
-    background: #0077b6;
+    background: linear-gradient(135deg, #0077b6, #0096c7);
     color: white;
-    padding: 20px;
+    padding: 25px 15px;
     text-align: center;
 }
 
+header h1 {
+    font-size: 32px;
+}
+
+header p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* ===== Navigation ===== */
 nav {
     background: #023e8a;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 10px;
-    text-align: center;
 }
 
 nav a {
     color: white;
-    margin: 10px;
+    margin: 8px 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    background: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #023e8a;
+}
+
+.hero p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #0077b6;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
 }
 
-.hero {
-    padding: 40px;
-    text-align: center;
-    background: white;
+.btn:hover {
+    background: #023e8a;
 }
 
-.btn {
-    background: #0077b6;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
+/* ===== Services / Content Section ===== */
 .services {
-    padding: 30px;
-    background: #e9ecef;
+    background: #e9f1f7;
+    padding: 40px 20px;
+    text-align: center;
 }
 
+.services h2 {
+    margin-bottom: 20px;
+    color: #023e8a;
+}
+
+.services ul {
+    list-style: none;
+    max-width: 600px;
+    margin: auto;
+}
+
+.services li {
+    background: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+/* ===== Footer ===== */
 footer {
     background: #023e8a;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
+    font-size: 14px;
+}
+
+/* ===== Mobile Responsive ===== */
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    nav a {
+        font-size: 14px;
+        margin: 6px;
+    }
+
+    .services li {
+        font-size: 14px;
+    }
 }
